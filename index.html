@@ -65,17 +65,17 @@
             for (i = 1; i <= n; i++) {
                 if ((i % 3 == 0) && (i % 5 == 0)) {
                     ans.push('"FizzBuzz"');
-                } else if(i % 3 == 0) {
+                } else if (i % 3 == 0) {
                     ans.push('"Fizz"');
-                } else if(i % 5 == 0) {
+                } else if (i % 5 == 0) {
                     ans.push('"Buzz"');
                 } else {
-                    ans.push("" + i);
+                    ans.push('"' + i.toString() + '"');
                 }
             }
             document.write(ans);
         };
-        fizzBuzz(30);
+        fizzBuzz(100);
     </script>
 </body>
 
